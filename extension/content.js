@@ -94,7 +94,7 @@ function createFloatingButton() {
     button.disabled = true;
 
     try {
-        const response = await fetch("http://127.0.0.1:8000/analyze", {
+        const response = await fetch("https://gmail-phising-analyser.onrender.com/analyze", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
