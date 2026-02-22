@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Phishing Risk Analyzer",
+  "version": "1.0",
+  "description": "Analyze email risk before clicking",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://mail.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
